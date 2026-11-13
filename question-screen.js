@@ -2644,7 +2644,7 @@
           if (fb) {
             fb.hidden = false;
             fb.className = 'qs-sort-fb is-nok';
-            fb.textContent = item.hint || (triage ? 'Esse não é o setor certo.' : 'Não conforme com a NR-12.');
+            fb.textContent = item.hint || (triage ? 'Esse não é o setor certo.' : 'Não conforme com a NR-11.');
           }
         }
         goNext(ok);

@@ -18,8 +18,8 @@
   var HOME_TEXT = [
     'Segurança do Trabalho.',
     'N R onze, Transpaleteira.',
-    'Norma, máquina, partida e regulagem, riscos e proteções.',
-    'Sete módulos completos. Treinamento cem por cento online.',
+    'Legislação e E P I, equipamento, operação segura, baterias e prevenção.',
+    'Quatro módulos completos.',
     'Toque em iniciar o treinamento.'
   ].join(' ');
 
@@ -270,8 +270,8 @@
   // o menu tem uma gravação por situação: qual módulo está liberado agora.
   // 0 significa que todos já foram concluídos.
   function menuAudioKey(nextModule, variant) {
-    if (!nextModule) return 'menu-nr12-done';
-    return 'menu-nr12-' + nextModule + '-' + (variant || 'start');
+    if (!nextModule) return 'menu-nr11-done';
+    return 'menu-nr11-' + nextModule + '-' + (variant || 'start');
   }
 
   function buildMenuCardText(session, moduleId, variant) {
@@ -317,7 +317,7 @@
   }
 
   return {
-    HOME_KEY: 'home-nr12',
+    HOME_KEY: 'home-nr11',
     stripHtml: stripHtml,
     clean: clean,
     buildCatalog: buildCatalog,

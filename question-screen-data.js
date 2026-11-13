@@ -11,45 +11,54 @@ window.QUESTION_SCREEN_SESSION = {
   modules: [
     {
       id: 1,
-      title: "Fundamentos, Legislação e Requisitos",
-      objective: "Capacitar para o uso seguro e eficiente da transpaleteira, com a base da NR-11, os requisitos do operador e a habilitação.",
+      title: "Fundamentos Legais, Requisitos do Operador e EPIs",
+      objective: "Conhecer a base jurídica da NR-11, as regras de habilitação e autorização do operador e o uso obrigatório dos EPIs.",
       titleUnlock: {
         title: "BASE DA NR-11",
-        body: "Você conhece a norma, os requisitos do operador e a validade do cartão de identificação.",
+        body: "Você acompanha a validade da autorização e usa os EPIs certos para prevenir lesões.",
         icon: "📘"
       },
       screens: [
         {
-          id: "nr12-m1-capa",
+          id: "nr11-m1-cover",
           type: "cover",
           image: "assets/fotos/capa-modulo1.png",
           imageAlt: "Transpaleteira elétrica em um corredor de galpão, entre estantes de paletes",
-          title: "Módulo 1 — Fundamentos, legislação e requisitos",
-          subtitle: "Objetivo do treinamento, introdução à NR-11, requisitos do operador e documentação de habilitação."
+          title: "Módulo 1 — Fundamentos legais, requisitos do operador e EPIs",
+          subtitle: "Legislação da NR-11, habilitação, validade do cartão, proibição do modo embarcado e EPIs obrigatórios."
         },
         {
-          id: "nr11-m1-objetivo",
+          id: "nr11-m1-video-apresentacao",
           type: "video",
           kicker: "Vídeo",
-          title: "Introdução à NR 11 e o Nosso Objetivo",
-          playerId: "panda-d5520149-26db-4767-8817-2f232b5c1210",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=d5520149-26db-4767-8817-2f232b5c1210"
+          title: "Apresentação do Curso, Legislação (NR 11) e Sinalização de Carga",
+          playerId: "panda-1123742e-999a-48a4-a4ba-9b45d55c287f",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=1123742e-999a-48a4-a4ba-9b45d55c287f"
         },
         {
-          id: "nr11-m1-equipamentos",
-          type: "video",
-          kicker: "Vídeo",
-          title: "A Norma NR 11 e os Equipamentos Motorizados",
-          playerId: "panda-03649847-6442-4f0d-b228-6b3a3daada07",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=03649847-6442-4f0d-b228-6b3a3daada07"
+          id: "nr11-m1-lei",
+          type: "content",
+          fit: true,
+          kicker: "Legislação",
+          eyebrow: "Legislação",
+          title: "O que a NR-11 Exige neste Treinamento",
+          titleAccent: "NR-11",
+          body: "A operação da transpaleteira segue estes subitens. Cada um gera uma obrigação prática no turno.",
+          cards: [
+            { icon: "📘", title: "Item 11.1", body: "A NR-11 trata do transporte, da movimentação, da armazenagem e do manuseio de materiais." },
+            { icon: "⚖️", title: "Item 11.1.3.2", body: "Todo equipamento indica, em lugar visível, a carga máxima de trabalho. Esse limite não se ultrapassa." },
+            { icon: "🎓", title: "Item 11.1.5", body: "O operador só é habilitado depois do treinamento específico dado pela empresa, teórico e prático." },
+            { icon: "🪪", title: "Item 11.1.6", body: "Durante o horário de trabalho, o operador porta o cartão de identificação, com nome e fotografia, em lugar visível." },
+            { icon: "📅", title: "Item 11.1.6.1", body: "O cartão vale 1 ano. A revalidação exige exame de saúde completo, por conta do empregador." }
+          ]
         },
         {
-          id: "nr11-m1-cartao",
+          id: "nr11-m1-video-requisitos",
           type: "video",
           kicker: "Vídeo",
-          title: "Habilitação e o Cartão de Identificação",
-          playerId: "panda-0739274a-34d1-47fe-83ce-60d0f0974dd4",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=0739274a-34d1-47fe-83ce-60d0f0974dd4"
+          title: "Requisitos do Operador, Cartão de Identificação e Proibição do Modo Embarcado",
+          playerId: "panda-adcc4944-9a24-4021-8e21-618bb2579a4c",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=adcc4944-9a24-4021-8e21-618bb2579a4c"
         },
         {
           id: "nr11-m1-cartao-conteudo",
@@ -75,872 +84,635 @@ window.QUESTION_SCREEN_SESSION = {
           }
         },
         {
-          id: "nr11-m1-validade",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Validade do Cartão e Responsabilidade do Operador",
-          playerId: "panda-0938331a-44f6-4bd2-8525-cc6cc9994ebd",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=0938331a-44f6-4bd2-8525-cc6cc9994ebd"
-        },
-        {
-          id: "nr11-m1-requisitos",
+          id: "nr11-m1-habilitacao",
           type: "content",
           fit: true,
-          kicker: "Diretrizes da NR-11",
-          eyebrow: "Diretrizes da NR-11",
-          title: "Requisitos para Operação",
-          body: "De acordo com a norma regulamentadora, o operador de equipamentos de transporte motorizado deverá:",
+          kicker: "Habilitação",
+          eyebrow: "Habilitação",
+          title: "Quem Pode Operar",
+          titleAccent: "Pode Operar",
+          body: "Sem estes quatro pontos em dia, a operação fica suspensa.",
           cards: [
-            { icon: "1", title: "Aptidão Médica", body: "Estar devidamente apto do ponto de vista médico (saúde física e mental atestada por exames ocupacionais específicos)." },
-            { icon: "2", title: "Treinamento", body: "Ter participado com aproveitamento de treinamento teórico e prático específico para a condução do equipamento." },
-            { icon: "3", title: "Reciclagem", body: "Participar de reciclagens anuais para renovação das orientações de segurança e atualização de competências." }
+            { icon: "1", title: "Treinamento teórico e prático", body: "A habilitação exige aproveitamento no treinamento específico da empresa, na teoria e na prática do equipamento." },
+            { icon: "2", title: "Cartão válido por 1 ano", body: "A carteirinha, com foto e nome, vale 1 ano. O próprio operador acompanha o vencimento e avisa a chefia." },
+            { icon: "3", title: "Renovação com ASO", body: "A renovação depende do Exame Médico de Saúde Ocupacional. O exame é custeado pelo empregador." },
+            { icon: "4", title: "Reciclagem anual", body: "A reciclagem é obrigatória todo ano, para renovar as orientações de segurança e as competências da função." }
           ],
-          note: { label: "Atenção", text: "O não cumprimento de qualquer um destes requisitos impede o operador de conduzir transpaleteiras na planta." }
+          note: { label: "Atenção", text: "Cartão vencido, ASO pendente ou reciclagem em atraso impedem a condução da transpaleteira." }
+        },
+        {
+          id: "nr11-m1-video-epi",
+          type: "video",
+          kicker: "Vídeo",
+          title: "Equipamentos de Proteção Individual (EPI) Obrigatórios",
+          playerId: "panda-a8c65a57-07c7-4362-b405-d30ce25e1344",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=a8c65a57-07c7-4362-b405-d30ce25e1344"
+        },
+        {
+          id: "nr11-m1-epis",
+          type: "content",
+          layout: "side",
+          fit: true,
+          eyebrow: "EPI",
+          title: "EPIs Obrigatórios da Operação",
+          titleAccent: "Obrigatórios da Operação",
+          image: "assets/fotos/epis.jpeg",
+          imageAlt: "Botina, capacete, luvas, óculos e protetor auricular sobre a bancada",
+          body: "A empresa fornece, orienta e exige o uso. O colaborador usa e conserva cada EPI. Sem o conjunto completo, a operação não começa.",
+          cards: [
+            { icon: "🧤", title: "Luvas tricotadas", body: "Luvas de segurança tricotadas, como a Opti-Grip, para o manuseio do timão, dos cabos e da carga." },
+            { icon: "⛑️", title: "Capacete com jugular", body: "Capacete de segurança com jugular ajustada. O capacete só protege se permanecer na cabeça." },
+            { icon: "👢", title: "Botina de segurança", body: "Botina de segurança contra impacto e esmagamento dos pés na movimentação de paletes." }
+          ],
+          note: { label: "Dever dos dois lados", text: "A empresa cobra o uso. O colaborador não retira, não empresta danificado e pede a troca quando o EPI perde a proteção." }
         },
         {
           id: "nr11-m1-desafio",
           type: "quiz-intro",
           title: "Pode operar?",
-          body: "Três perguntas da NR-11. Acerte no mínimo <strong>2</strong> de <strong>3</strong> para concluir o módulo.",
-          count: 3,
-          minCorrect: 2,
+          body: "Quatro perguntas da NR-11, da autorização e dos EPIs. Acerte no mínimo <strong>3</strong> de <strong>4</strong> para concluir o módulo.",
+          count: 4,
+          minCorrect: 3,
           icon: "🎯"
         },
         {
-          id: "nr11-m1-p1",
+          id: "nr11-m1-q1",
           type: "question",
           icon: "⚖️",
           image: "assets/fotos/m1i1.png",
           imageAlt: "Operadora conduzindo uma transpaleteira elétrica com um palete de caixas no corredor do galpão",
-          question: "De acordo com a NR 11, o que deve ser indicado de forma visível em todo equipamento de transporte de materiais?",
+          question: "De acordo com o item 11.1.3.2 da NR-11, o que deve estar indicado de forma visível em todo equipamento?",
           alternatives: [
             { id: "a", text: "A data do próximo exame médico obrigatório do operador.", correct: false },
-            { id: "b", text: "A carga máxima de trabalho permitida (limite que nunca deve ser ultrapassado).", correct: true },
+            { id: "b", text: "A carga máxima de trabalho permitida, limite que nunca deve ser ultrapassado.", correct: true },
             { id: "c", text: "O nome completo do fabricante e a cor da máquina.", correct: false }
           ],
-          explanation: "A NR-11 exige que a carga máxima de trabalho esteja indicada de forma visível no equipamento. Esse limite não pode ser ultrapassado.",
+          explanation: "O item 11.1.3.2 exige a carga máxima de trabalho em lugar visível. Esse limite não pode ser ultrapassado.",
           review: "Carga máxima visível"
         },
         {
-          id: "nr11-m1-p2",
+          id: "nr11-m1-q2",
           type: "question",
           icon: "🪪",
           image: "assets/fotos/m1i2.png",
           imageAlt: "Operadora mostra o crachá com foto, com a transpaleteira ao fundo no galpão",
-          question: "Para dirigir a transpaleteira durante todo o horário de trabalho, qual é a exigência legal sobre o crachá?",
+          question: "Para dirigir a transpaleteira durante todo o horário de trabalho, qual é a exigência do item 11.1.6?",
           alternatives: [
-            { id: "a", text: "Portar o cartão de identificação com seu nome e foto em local bem visível.", correct: true },
-            { id: "b", text: "Guardar a autorização física dentro da carteira pessoal no bolso.", correct: false },
-            { id: "c", text: "Exibir a autorização digital apenas quando for solicitado pela fiscalização.", correct: false }
+            { id: "a", text: "Portar o cartão de identificação com nome e foto em local bem visível.", correct: true },
+            { id: "b", text: "Guardar a autorização física dentro da carteira pessoal, no bolso.", correct: false },
+            { id: "c", text: "Exibir a autorização digital apenas quando a fiscalização pedir.", correct: false }
           ],
           explanation: "O item 11.1.6 exige o cartão de identificação, com nome e fotografia, em lugar visível durante o horário de trabalho.",
           review: "Cartão visível"
         },
         {
-          id: "nr11-m1-p3",
+          id: "nr11-m1-q3",
           type: "question",
           icon: "📅",
           image: "assets/fotos/m1i3.png",
           imageAlt: "Operadora confere no computador o crachá, o calendário e o checklist, com a transpaleteira ao lado",
-          question: "Qual é o prazo de validade da autorização e quem é o responsável por acompanhar esse vencimento?",
+          question: "Qual é a regra de validade da autorização e da renovação?",
           alternatives: [
-            { id: "a", text: "A validade é vitalícia e não necessita de exames ou acompanhamento.", correct: false },
-            { id: "b", text: "A validade é de 1 ano, sendo o próprio operador o responsável por monitorar a data e avisar a chefia.", correct: true },
-            { id: "c", text: "A validade é de 3 anos, cabendo exclusivamente ao RH da empresa monitorar.", correct: false }
+            { id: "a", text: "A validade é vitalícia e não depende de exame nem de acompanhamento.", correct: false },
+            { id: "b", text: "Vale 1 ano. A renovação depende do ASO custeado pelo empregador, e o operador acompanha o vencimento.", correct: true },
+            { id: "c", text: "Vale 3 anos e só o RH precisa saber a data, sem reciclagem anual.", correct: false }
           ],
-          explanation: "O cartão vale 1 ano. O operador acompanha o vencimento e avisa a chefia. Sem a renovação, a operação fica suspensa.",
+          explanation: "O cartão vale 1 ano. A renovação segue o ASO, pago pelo empregador. O operador controla o vencimento, e a reciclagem é anual.",
           review: "Validade de 1 ano"
         },
+        {
+          id: "nr11-m1-p4",
+          type: "question",
+          icon: "🦺",
+          image: "assets/fotos/epis.jpeg",
+          imageAlt: "EPIs de operação: botina, capacete e luvas",
+          question: "Sobre o modo embarcado e os EPIs desta operação, o que está correto?",
+          alternatives: [
+            { id: "a", text: "O modo embarcado é permitido em trajeto longo, e o EPI fica a critério do operador.", correct: false },
+            { id: "b", text: "O modo embarcado é proibido. São obrigatórios luvas tricotadas, capacete com jugular e botina: a empresa fornece e exige, o colaborador usa e conserva.", correct: true },
+            { id: "c", text: "Pode subir na plataforma se a botina estiver calçada e o capacete estiver no armário.", correct: false }
+          ],
+          explanation: "Operar embarcado é proibido. Os EPIs obrigatórios são luvas tricotadas, capacete com jugular e botina. A empresa fornece, orienta e exige. O colaborador usa e conserva.",
+          review: "Sem embarcado, com EPI"
+        }
       ]
     },
     {
       id: 2,
-      title: "Conhecendo o Equipamento",
-      objective: "Reconhecer os tipos de transpaleteira, as capacidades, os componentes, o painel de controle e o timão.",
+      title: "Reconhecimento Técnico dos Equipamentos e Comandos",
+      objective: "Identificar a frota, localizar os componentes da Still EGU 20C e da Still ECH 12 e acionar o freio pela posição do timão.",
       titleUnlock: {
         title: "A MÁQUINA",
-        body: "Você identifica modelos, capacidades, componentes, painel e os comandos do timão.",
+        body: "Você nomeia cada componente e freia pelo timão, sem usar o reverso como freio.",
         icon: "⚙️"
       },
       screens: [
         {
-          id: "nr12-m2-capa",
+          id: "nr11-m2-cover",
           type: "cover",
           icon: "⚙️",
           image: "assets/fotos/capa-modulo2.png",
           imageAlt: "Operadora com capacete e colete ao lado de uma transpaleteira elétrica, em um corredor de galpão com estantes de paletes",
-          title: "Módulo 2 — Conhecendo o equipamento",
-          subtitle: "Tipos de transpaleteira, capacidades, componentes, painel de controle e o timão."
+          title: "Módulo 2 — Reconhecimento técnico dos equipamentos e comandos",
+          subtitle: "Frota Still EGU 20C, Still ECH 12 e paleteira manual, painel, horímetro, timão e freio."
         },
         {
-          id: "nr11-m2-tipos",
+          id: "nr11-m2-video-frota",
           type: "video",
           kicker: "Vídeo",
-          title: "Os Tipos de Transpaleteiras e a Opção Manual",
-          playerId: "panda-ed64aaa2-8266-4985-8983-dd11c38aeb97",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=ed64aaa2-8266-4985-8983-dd11c38aeb97"
+          title: "Apresentação da Frota: Transpaleteiras e Paleteiras",
+          playerId: "panda-4471b3e1-da44-4685-bb4e-8ea432f18b04",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=4471b3e1-da44-4685-bb4e-8ea432f18b04"
         },
         {
-          id: "nr11-m2-eletricas",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Transpaleteiras Elétricas e Tripuladas",
-          playerId: "panda-25e6c26f-fa6c-4177-b9aa-20d30217be50",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=25e6c26f-fa6c-4177-b9aa-20d30217be50"
-        },
-        {
-          id: "nr11-m2-tipos-conteudo",
-          type: "content",
-          layout: "types",
-          eyebrow: "Equipamento",
-          title: "Tipos de Transpaleteira",
-          titleAccent: "Transpaleteira",
-          body: "Conhecendo o equipamento.",
-          cards: [
-            { icon: "🖐️", title: "Transpaleteira Manual", body: "Força humana · curtas distâncias", image: "assets/fotos/TRANSPALETEIRAMANUAL.png", imageAlt: "Transpaleteira manual azul" },
-            { icon: "⚡", title: "Transpaleteira Elétrica", body: "Motor elétrico · maior eficiência", image: "assets/fotos/transpaleteiraeletrica.jpg", imageAlt: "Transpaleteira elétrica laranja" },
-            { icon: "🧍", title: "Transpaleteira Elétrica Tripulada", body: "Operador a bordo · longos trajetos", image: "assets/fotos/transpaleteiraeletricatripulada.png", imageAlt: "Transpaleteira elétrica tripulada" }
-          ]
-        },
-        {
-          id: "nr11-m2-componentes",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Componentes Principais da Transpaleteira",
-          playerId: "panda-e20f3380-d348-4cf1-8636-820dc621e19f-componentes",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=e20f3380-d348-4cf1-8636-820dc621e19f"
-        },
-        {
-          id: "nr11-m2-painel",
-          type: "video",
-          kicker: "Vídeo",
-          title: "O Painel de Controle e a Chave de Contato",
-          playerId: "panda-10def56d-6345-4ae5-b809-c1a22b535c71",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=10def56d-6345-4ae5-b809-c1a22b535c71"
-        },
-        {
-          id: "nr11-m2-timao",
+          id: "nr11-m2-frota-egu",
           type: "content",
           layout: "figure",
           wide: true,
-          eyebrow: "Conteúdo",
-          title: "O Timão e os Comandos de Direção",
-          titleAccent: "Comandos de Direção",
-          body: "Conhecendo o equipamento.",
-          image: "assets/fotos/TIMAO.png",
-          imageAlt: "Timão da transpaleteira. Comandos: sobe, desce, buzina, devagar e freio. O timão ergonômico favorece o deslocamento, o direcionamento e o freio. Antes do esmagamento, o pulsar para frente e para trás não deve ser usado como reverso para frear."
+          eyebrow: "Frota",
+          title: "Transpaleteira Still EGU 20C",
+          titleAccent: "Still EGU 20C",
+          body: "Toque na imagem para ampliar e ler cada componente. Operação a pé — modo embarcado proibido.",
+          image: "assets/fotos/Infográfico da Transpaleteira Still EGU 20C.png",
+          imageAlt: "Infográfico da Transpaleteira Still EGU 20C com os componentes numerados"
         },
         {
-          id: "nr11-m2-freios",
+          id: "nr11-m2-frota-ech",
+          type: "content",
+          layout: "figure",
+          wide: true,
+          eyebrow: "Frota",
+          title: "Paleteira Elétrica Still ECH 12",
+          titleAccent: "Still ECH 12",
+          body: "Toque na imagem para ampliar e ler cada componente. Operação a pé — modo embarcado proibido.",
+          image: "assets/fotos/Infográfico da Paleteira Elétrica Still ECH 12.png",
+          imageAlt: "Infográfico da Paleteira Elétrica Still ECH 12 com os componentes numerados"
+        },
+        {
+          id: "nr11-m2-video-timao",
+          type: "video",
+          kicker: "Vídeo",
+          title: "Comandos do Timão, Mecânica do Freio e Alerta do Botão Reverso",
+          playerId: "panda-8e67b6b8-bcac-45dd-9ce9-f9ea989218e6",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=8e67b6b8-bcac-45dd-9ce9-f9ea989218e6"
+        },
+        {
+          id: "nr11-m2-timao-comandos",
+          type: "content",
+          layout: "figure",
+          wide: true,
+          eyebrow: "Timão",
+          title: "O Timão e os Comandos de Direção",
+          titleAccent: "Comandos de Direção",
+          body: "No timão estão a buzina, a elevação, a descida e o acelerador. O freio não é o reverso: ele depende da posição do braço.",
+          image: "assets/fotos/TIMAO.png",
+          imageAlt: "Timão da transpaleteira com os comandos de subida, descida, buzina e acelerador. O freio é pela posição do braço, não pelo reverso."
+        },
+        {
+          id: "nr11-m2-freio-posicao",
           type: "content",
           pair: true,
           eyebrow: "Freios",
-          title: "O Sistema de Freios e a Proibição do Reverso",
-          titleAccent: "Proibição do Reverso",
+          title: "O Freio pela Posição do Timão",
+          titleAccent: "Posição do Timão",
           images: [
             {
               image: "assets/fotos/VERTICAL.png",
-              imageAlt: "Operador com o timão na posição vertical, acionando o freio",
-              caption: "Posição vertical"
+              imageAlt: "Timão na posição vertical superior, com o freio acionado",
+              caption: "Vertical superior: freio acionado"
             },
             {
               image: "assets/fotos/HORIZONTAL.png",
-              imageAlt: "Operador com o timão na posição horizontal extrema, acionando o freio",
-              caption: "Posição horizontal"
+              imageAlt: "Timão na posição extrema horizontal, com o freio acionado",
+              caption: "Extrema horizontal: freio acionado"
             }
           ],
           note: {
             alert: true,
             label: "Alerta",
-            text: "Não se deve usar \"reverso\" como freio. Use sempre as posições limites do timão para frear suavemente, evitando que a carga tombe."
+            text: "O freio atua com o braço do timão na vertical superior e na posição extrema horizontal. É proibido usar o reverso ou o pulsar para frear. Esse hábito danifica o sistema e pode tombar a carga."
           }
         },
         {
-          id: "nr11-m2-desafio",
+          id: "nr11-m2-quiz",
           type: "quiz-intro",
           title: "Verdadeiro ou falso?",
-          body: "Quatro afirmações sobre o equipamento. Acerte no mínimo <strong>3</strong> de <strong>4</strong> para concluir o módulo.",
+          body: "Quatro afirmações sobre a frota, o painel e o freio. Acerte no mínimo <strong>3</strong> de <strong>4</strong> para concluir o módulo.",
           count: 4,
           minCorrect: 3,
           icon: "✓"
         },
         {
-          id: "nr11-m2-tf1",
+          id: "nr11-m2-vf1",
           type: "question",
           tf: true,
-          question: "A paleteira manual é ideal para longas distâncias e cargas muito pesadas, acima de 5 toneladas.",
-          alternatives: [
-            { id: "v", text: "Verdadeiro", correct: false },
-            { id: "f", text: "Falso", correct: true }
-          ],
-          explanation: "A paleteira manual é indicada para curtas distâncias em superfícies planas, com capacidade entre 1,5 e 3 toneladas.",
-          review: "Paleteira manual"
-        },
-        {
-          id: "nr11-m2-tf2",
-          type: "question",
-          tf: true,
-          question: "Na transpaleteira elétrica tripulada (jet), o operador trabalha em pé, sobre uma plataforma do próprio equipamento.",
+          question: "A frota da unidade tem a Still EGU 20C, a Still ECH 12 (JET) e a paleteira manual hidráulica. As elétricas fazem movimentação horizontal, com capacidade técnica de 1.800 a 2.000 kg e estabilidade em 5 pontos de apoio.",
           alternatives: [
             { id: "v", text: "Verdadeiro", correct: true },
             { id: "f", text: "Falso", correct: false }
           ],
-          explanation: "Esse modelo permite maior conforto e controle em trajetos longos, com capacidade entre 2 e 3 toneladas.",
-          review: "Elétrica tripulada"
+          explanation: "São esses três modelos. As elétricas movem a carga na horizontal, com 1.800 a 2.000 kg e cinco pontos de apoio, incluindo as rodas estabilizadoras.",
+          review: "Frota e capacidade"
         },
         {
-          id: "nr11-m2-tf3",
+          id: "nr11-m2-vf2",
           type: "question",
           tf: true,
-          question: "Os garfos e as rodas de poliuretano fazem parte dos componentes principais da transpaleteira elétrica.",
-          alternatives: [
-            { id: "v", text: "Verdadeiro", correct: true },
-            { id: "f", text: "Falso", correct: false }
-          ],
-          explanation: "Os garfos sustentam a carga e as rodas de poliuretano garantem o movimento seguro do equipamento.",
-          review: "Garfos e rodas"
-        },
-        {
-          id: "nr11-m2-tf4",
-          type: "question",
-          tf: true,
-          question: "É permitido deixar a chave de contato ligada ao se afastar da máquina, desde que por pouco tempo.",
+          question: "Na paleteira manual, o certo é puxar o equipamento e frear colocando o pé na roda, em velocidade acima da caminhada.",
           alternatives: [
             { id: "v", text: "Verdadeiro", correct: false },
             { id: "f", text: "Falso", correct: true }
           ],
-          explanation: "A chave de contato deve sempre ser desligada ao se afastar da máquina, evitando uso não autorizado e acidentes.",
-          review: "Chave de contato"
+          explanation: "A regra é empurrar, não puxar. A velocidade é a de caminhada normal. Não se freia com o pé na roda nem se faz parada brusca.",
+          review: "Empurrar a manual"
+        },
+        {
+          id: "nr11-m2-vf3",
+          type: "question",
+          tf: true,
+          question: "A chave de contato imobiliza o circuito elétrico e deve ser desligada ao se afastar. Quando o LED da bateria chega a 20% e pisca, a elevação dos garfos é bloqueada automaticamente.",
+          alternatives: [
+            { id: "v", text: "Verdadeiro", correct: true },
+            { id: "f", text: "Falso", correct: false }
+          ],
+          explanation: "A chave fica no painel ou no timão e corta a energia ao sair. Em 20% de carga, o LED pisca e a elevação trava por segurança.",
+          review: "Chave e bateria a 20%"
+        },
+        {
+          id: "nr11-m2-vf4",
+          type: "question",
+          tf: true,
+          question: "O freio atua com o timão na vertical superior ou na horizontal extrema. O botão de pulsar/reverso pode ser usado para frear a máquina.",
+          alternatives: [
+            { id: "v", text: "Verdadeiro", correct: false },
+            { id: "f", text: "Falso", correct: true }
+          ],
+          explanation: "A primeira parte está certa: o freio é pela posição do braço. A segunda está errada: o pulsar jamais serve de freio. Freia-se só com o timão.",
+          review: "Freio sem pulsar"
         }
       ]
     },
     {
       id: 3,
-      title: "Procedimentos Operacionais e Operação Segura",
-      objective: "Conduzir a transpaleteira no dia a dia: inspeção pré-uso, trânsito interno, postura e estacionamento seguro.",
+      title: "Operação Segura, Movimentação de Cargas e Inspeção",
+      objective: "Circular a no máximo 6 km/h, estabilizar a carga até 1.500 kg e fazer o checklist diário antes de operar.",
       titleUnlock: {
         title: "OPERAÇÃO SEGURA",
-        body: "Você inspeciona antes do turno, respeita o trânsito interno e estaciona sem obstruir a emergência.",
+        body: "Você respeita o trânsito da unidade, estabiliza a carga e não opera equipamento não conforme.",
         icon: "🎛️"
       },
       screens: [
         {
-          id: "nr12-m3-capa",
+          id: "nr11-m3-cover",
           type: "cover",
           icon: "🎛️",
           image: "assets/fotos/capa-modulo3.png",
           imageAlt: "Operadora com capacete e colete em um corredor de galpão, com a transpaleteira elétrica ao lado e estantes de paletes",
-          title: "Módulo 3 — Procedimentos operacionais e operação segura",
-          subtitle: "Inspeção pré-uso, trânsito interno, postura, visibilidade e estacionamento seguro."
+          title: "Módulo 3 — Operação segura, movimentação de cargas e inspeção",
+          subtitle: "Trânsito a 6 km/h, rampas, paleteira manual, limite de 1.500 kg e checklist pré-operacional."
         },
         {
-          id: "nr11-m3-inspecao",
+          id: "nr11-m3-video-transito",
           type: "video",
           kicker: "Vídeo",
-          title: "Inspeção Pré-Uso e o Checklist Diário",
-          playerId: "panda-072890c1-6796-4178-bee4-e0c9d2505cf7",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=072890c1-6796-4178-bee4-e0c9d2505cf7"
+          title: "Regras de Trânsito Interno, Condução e Manobras em Rampas",
+          playerId: "panda-ef5415a3-c2c9-4940-9972-d571f8565d01",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=ef5415a3-c2c9-4940-9972-d571f8565d01"
         },
         {
-          id: "nr11-m3-postura",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Postura Corporal, Visibilidade e Condução",
-          playerId: "panda-6640e9b1-c166-4cd6-bbba-e4d18b01000f",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=6640e9b1-c166-4cd6-bbba-e4d18b01000f"
-        },
-        {
-          id: "nr11-m3-transito",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Regras de Trânsito Interno e Preferências",
-          playerId: "panda-46860ea9-83e6-497e-9cba-45b2335a4e8f",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=46860ea9-83e6-497e-9cba-45b2335a4e8f"
-        },
-        {
-          id: "nr11-m3-transito-regras",
+          id: "nr11-m3-regras",
           type: "content",
           fit: true,
           eyebrow: "Trânsito",
-          title: "Regras de Trânsito Interno",
-          titleAccent: "Trânsito Interno",
-          body: "Na operação logística do dia a dia, a circulação segura exige disciplina e atenção constante. Conheça as regras essenciais de trânsito interno.",
+          title: "Condução e Estacionamento Seguro",
+          titleAccent: "Estacionamento Seguro",
+          body: "Em Drive e Logística o limite é 6 km/h. Sem celular, sem costurar e sem chave na ignição ao se afastar.",
           cards: [
-            { icon: "🚶", title: "Pedestres em Primeiro", body: "Dê sempre preferência absoluta aos pedestres. Evite conversões bruscas e circule com atenção redobrada em corredores compartilhados." },
-            { icon: "🚫", title: "Parada Obrigatória", body: "A parada é obrigatória em todos os cruzamentos e curvas, dando preferência a empilhadeiras e paleteiras carregadas." },
-            { icon: "🚦", title: "Sem \"Costurar\"", body: "Não tente costurar entre obstáculos. Circule por rotas livres e sinalize sua passagem antes de dar passagem para outra máquina." },
-            { icon: "🛞", title: "Condução Suave", body: "Mantenha postura adequada. Evite freadas e arrancadas bruscas. Reduza a velocidade em curvas e locais de pouca visibilidade." },
-            { icon: "📣", title: "Buzina com Moderação", body: "Use a buzina somente quando estritamente necessário para alertar outras pessoas. Não buzine de forma excessiva ou em zonas de silêncio." },
-            { icon: "💧", title: "Pisos com Risco", body: "Se o piso estiver molhado, com óleo ou irregular, reduza imediatamente a velocidade e redobre o cuidado para evitar derrapagens." }
+            { icon: "🚦", title: "Máximo de 6 km/h", body: "O limite é 6 km/h em Drive e em Logística. Curva, cruzamento e piso irregular pedem menos. Condução suave, sem arrancada nem freada brusca." },
+            { icon: "🚶", title: "Cruzamentos e preferência", body: "Pare em todo cruzamento e conversão. Pedestres têm preferência absoluta. Ceda também a empilhadeiras e paleteiras carregadas. Nunca transite costurando entre obstáculos." },
+            { icon: "📱", title: "Sem telefone celular", body: "É proibido usar telefone celular durante a operação. O celular reduz o foco e a atenção necessários para prevenir acidentes." },
+            { icon: "🚫", title: "Sem carona nem escada", body: "Corpo sempre à frente do timão. É proibido dar carona, usar a máquina como escada e sentar na bateria." },
+            { icon: "🅿️", title: "Estacione no local certo", body: "Estacione só em locais delimitados e permitidos. Ao se afastar, nunca deixe a chave na ignição." },
+            { icon: "🛑", title: "Não obstrua a emergência", body: "É proibido estacionar bloqueando saídas de emergência, hidrantes, extintores, painéis elétricos, rotas de pedestres, ruas de acesso e prateleiras." }
           ]
         },
         {
-          id: "nr11-m3-manuseio",
+          id: "nr11-m3-video-carga",
           type: "video",
           kicker: "Vídeo",
-          title: "Técnicas de Manuseio e Transporte de Cargas",
-          playerId: "panda-1059059a-d1b8-4ece-b5e2-cce2cde628f0",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=1059059a-d1b8-4ece-b5e2-cce2cde628f0"
+          title: "Manuseio de Cargas, Dispositivos de Apoio e Estabilização",
+          playerId: "panda-0574d64c-6f69-47bc-b53d-56d98217fd30",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=0574d64c-6f69-47bc-b53d-56d98217fd30"
         },
         {
-          id: "nr11-m3-rampas",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Operação Segura em Rampas e Inclinações",
-          playerId: "panda-8f2e4f24-ad8f-45e1-9e2d-9a139c1efab3",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=8f2e4f24-ad8f-45e1-9e2d-9a139c1efab3"
-        },
-        {
-          id: "nr11-m3-proibicoes",
+          id: "nr11-m3-tipos-carga",
           type: "content",
-          fit: true,
-          eyebrow: "Proibições",
-          title: "Proibições Críticas e Parada de Emergência",
-          titleAccent: "Parada de Emergência",
-          cards: [
-            { icon: "🚫", title: "Sem carona", body: "É proibido dar carona na transpaleteira ou sentar sobre a bateria da máquina." },
-            { icon: "🪜", title: "Sem escada ou plataforma", body: "Nunca use o equipamento como escada, plataforma de trabalho ou transporte de passageiros." },
-            { icon: "🔧", title: "Sem conserto", body: "Não faça manutenção nem conserto sem o treinamento de mecânico. Deixe isso para o setor responsável." },
-            { icon: "🛑", title: "Parada de emergência", body: "O botão cessa os movimentos elétricos. Acione só em risco iminente, acidente consumado ou emergência extrema." }
-          ]
+          layout: "figure",
+          wide: true,
+          eyebrow: "Carga",
+          title: "Classificação dos Tipos de Cargas",
+          titleAccent: "Tipos de Cargas",
+          body: "Toque na imagem para ampliar e conferir cada classificação.",
+          image: "assets/fotos/Tipos de Cargas no Armazém.png",
+          imageAlt: "Infográfico com a classificação dos tipos de cargas no armazém"
         },
         {
-          id: "nr11-m3-estacionamento",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Estacionamento Seguro e Finalização de Turno",
-          playerId: "panda-2199bac6-c88d-4c8d-a0b6-5579eab8957a",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=2199bac6-c88d-4c8d-a0b6-5579eab8957a"
-        },
-        {
-          id: "nr11-m3-jogada",
-          type: "match",
-          relaxed: true,
-          title: "Qual é a jogada?",
-          leftTitle: "Aconteceu",
-          rightTitle: "Você faz",
-          minCorrect: 4,
-          pairs: [
-            { ex: "O checklist ficou vermelho", body: "Avisa a chefia e manda para a manutenção" },
-            { ex: "Hora de conduzir", body: "Anda com o corpo à frente do timão" },
-            { ex: "Chegou num cruzamento", body: "Para e deixa o pedestre passar" },
-            { ex: "Fim do turno", body: "Abaixa os garfos e tira a chave" }
-          ]
-        }
-      ]
-    },
-    {
-      id: 4,
-      title: "Movimentação, Cargas e Armazenamento",
-      objective: "Movimentar cargas com estabilidade, nas rampas e no empilhamento, respeitando palete e piso.",
-      titleUnlock: {
-        title: "CARGA ESTÁVEL",
-        body: "Você mantém o centro de gravidade, sobe e desce rampas na posição certa e respeita o piso.",
-        icon: "📦"
-      },
-      screens: [
-        {
-          id: "nr12-m4-capa",
-          type: "cover",
-          icon: "📦",
-          image: "assets/fotos/capa-modulo4.png",
-          imageAlt: "Transpaleteira elétrica em primeiro plano, em um corredor de galpão com estantes de paletes",
-          title: "Módulo 4 — Movimentação, cargas e armazenamento",
-          subtitle: "Estabilidade da carga, rampas, tipos de palete e regras de empilhamento e solo."
-        },
-        {
-          id: "nr11-m4-estabilidade",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Estabilidade e Segurança da Carga",
-          playerId: "panda-008a62d9-bfb0-4943-a321-c9dacb07d6c1",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=008a62d9-bfb0-4943-a321-c9dacb07d6c1"
-        },
-        {
-          id: "nr11-m4-paletes",
+          id: "nr11-m3-paletes",
           type: "content",
           layout: "types",
-          eyebrow: "Equipamento",
+          eyebrow: "Carga",
           title: "Dois Tipos de Palete",
           titleAccent: "Palete",
+          body: "A diferença está no acesso dos garfos: dois lados ou quatro lados.",
           cards: [
             {
-              title: "Palete de Duas Entradas",
-              body: "Aberturas apenas em lados opostos — acesso mais limitado para os garfos da transpaleteira.",
+              title: "Palete de duas entradas",
+              body: "Aberturas só em lados opostos. Os garfos entram por duas faces — acesso mais limitado.",
               image: "assets/fotos/PALLET DUAS.png",
               imageAlt: "Palete de duas entradas, com aberturas em lados opostos"
             },
             {
-              title: "Palete de Quatro Entradas",
-              body: "Aberturas nos quatro lados — o mais versátil, ideal para corredores estreitos.",
+              title: "Palete de quatro entradas",
+              body: "Aberturas nos quatro lados. Os garfos entram por qualquer face — mais versátil em corredores estreitos.",
               image: "assets/fotos/PALLET 4.webp",
               imageAlt: "Palete de quatro entradas, com aberturas nos quatro lados"
             }
           ]
         },
         {
-          id: "nr11-m4-classificacao",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Classificação das Cargas no Treinamento",
-          playerId: "panda-c164a67f-8b62-43de-83fa-ec22039fb0dd",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=c164a67f-8b62-43de-83fa-ec22039fb0dd"
+          id: "nr11-m3-carga",
+          type: "content",
+          fit: true,
+          eyebrow: "Armazenamento",
+          title: "Armazenamento, Empilhamento e Transporte",
+          titleAccent: "Empilhamento e Transporte",
+          body: "Esses limites protegem o piso, as paredes e a estabilidade da máquina no deslocamento.",
+          cards: [
+            { icon: "🏗️", title: "Capacidade do piso", body: "O peso total dos materiais armazenados nunca pode ultrapassar a capacidade de carga estrutural do piso." },
+            { icon: "📏", title: "Afastamento de 50 cm", body: "Todo material empilhado fica a pelo menos 50 cm das estruturas laterais do prédio e entre os corredores de circulação." },
+            { icon: "📦", title: "No máximo 10 paletes vazios", body: "No empilhamento de paletes vazios para movimentação com a transpaleteira, o limite é de no máximo 10 paletes sobrepostos." },
+            { icon: "↕️", title: "15 a 20 cm do chão", body: "Em terreno regular, a base inferior da carga fica a cerca de 15 a 20 cm do solo. Assim evita atrito e mantém a estabilidade." }
+          ]
         },
         {
-          id: "nr11-m4-armazenamento",
+          id: "nr11-m3-video-checklist",
           type: "video",
           kicker: "Vídeo",
-          title: "Regras de Armazenamento e Limites do Piso",
-          playerId: "panda-12929574-ce98-4b2f-a6fe-5feda636330a",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=12929574-ce98-4b2f-a6fe-5feda636330a"
+          title: "Checklist Pré-Operacional, Não Conformidades e Manutenção",
+          playerId: "panda-2556739b-49fa-41b9-bc41-7a52b2ed01b1",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=2556739b-49fa-41b9-bc41-7a52b2ed01b1"
         },
         {
-          id: "nr11-m4-desafio",
+          id: "nr11-m3-checklist",
+          type: "content",
+          fit: true,
+          eyebrow: "Checklist",
+          title: "Checklist do Início do Turno",
+          titleAccent: "Início do Turno",
+          body: "A inspeção é diária, antes da primeira movimentação. Item não conforme tira a máquina de circulação.",
+          cards: [
+            { icon: "🧹", title: "O que conferir", body: "Limpeza, placas de sinalização, trava da bateria e nível de carga. Sem esses itens conformes, não se liga para operar." },
+            { icon: "📣", title: "Não conforme", body: "Comunique a chefia na hora e envie o equipamento para a manutenção. Não deixe para o fim do turno." },
+            { icon: "🚫", title: "Não opere com defeito", body: "Freio, garfo, buzina, roda ou bateria com falha encerram a operação daquela máquina." },
+            { icon: "🔧", title: "Sem reparo próprio", body: "O operador não conserta, não altera e não 'dá um jeito'. Reparo é da manutenção." }
+          ],
+          note: { alert: true, label: "Alerta", text: "Operar equipamento não conforme, ou reparar por conta própria, é proibido." }
+        },
+        {
+          id: "nr11-m3-desafio",
           type: "quiz-intro",
-          title: "Certo ou errado?",
-          body: "Cinco afirmações. Você começa com <strong>3 corações</strong> e tem <strong>20 segundos</strong> em cada uma. Errou ou deixou o tempo acabar, perde um coração.",
-          count: 5,
-          minCorrect: 1,
-          lives: 3,
-          icon: "✓"
+          title: "Pode seguir?",
+          body: "Quatro situações de trânsito, rampa, carga e checklist. Acerte no mínimo <strong>3</strong> de <strong>4</strong> para concluir o módulo.",
+          count: 4,
+          minCorrect: 3,
+          icon: "🎯"
         },
         {
-          id: "nr11-m4-ce1",
+          id: "nr11-m3-p1",
           type: "question",
-          tf: true,
-          question: "Cargas soltas ou instáveis podem ser transportadas sem problema, desde que o trajeto seja curto.",
+          icon: "🚦",
+          image: "assets/fotos/capa-modulo3.png",
+          imageAlt: "Corredor de operação com transpaleteira e pedestre na área",
+          question: "Qual é o limite de velocidade em Drive e Logística, e quem tem a preferência no cruzamento?",
           alternatives: [
-            { id: "v", text: "Certo", correct: false },
-            { id: "f", text: "Errado", correct: true }
+            { id: "a", text: "12 km/h, e a máquina carregada passa primeiro.", correct: false },
+            { id: "b", text: "6 km/h. O pedestre tem preferência absoluta e a parada no cruzamento é obrigatória.", correct: true },
+            { id: "c", text: "Não há limite, desde que a buzina fique ligada o tempo todo.", correct: false }
           ],
-          explanation: "Cargas soltas ou instáveis nunca são permitidas. O equilíbrio deve ser garantido antes de mover.",
-          review: "Carga instável"
+          explanation: "O máximo é 6 km/h em Drive e Logística. No cruzamento, pare. O pedestre passa primeiro. A buzina é pontual.",
+          review: "6 km/h e pedestre"
         },
         {
-          id: "nr11-m4-ce2",
+          id: "nr11-m3-p2",
           type: "question",
-          tf: true,
-          question: "O palete de quatro entradas permite a inserção dos garfos por qualquer um dos quatro lados.",
+          icon: "⛰️",
+          image: "assets/fotos/HORIZONTAL.png",
+          imageAlt: "Operação com o timão em posição de controle da máquina",
+          question: "Como se conduz uma rampa, e como se move a paleteira manual?",
           alternatives: [
-            { id: "v", text: "Certo", correct: true },
-            { id: "f", text: "Errado", correct: false }
+            { id: "a", text: "Sobe e desce de qualquer lado, e na manual é melhor puxar a carga.", correct: false },
+            { id: "b", text: "Sobe com a carga à frente e desce em marcha reduzida com a carga atrás, sem curva nem parada na rampa. Na manual, empurra na velocidade de caminhada.", correct: true },
+            { id: "c", text: "Pode estacionar no aclive se os garfos estiverem abaixados.", correct: false }
           ],
-          explanation: "O palete de quatro entradas é o mais versátil, com abertura em todos os lados.",
-          review: "Palete de quatro entradas"
+          explanation: "Subida com a carga à frente. Descida em marcha reduzida, com a carga atrás. Sem curva e sem estacionar na rampa. Na manual, empurre, sem parada brusca.",
+          review: "Rampa e manual"
         },
         {
-          id: "nr11-m4-ce3",
+          id: "nr11-m3-p3",
           type: "question",
-          tf: true,
-          question: "Areia solta, sem contenção, pode ser transportada normalmente na transpaleteira.",
+          icon: "📦",
+          image: "assets/fotos/capa-modulo4.png",
+          imageAlt: "Transpaleteira com palete no corredor de armazenagem",
+          question: "Sobre armazenamento e transporte com a transpaleteira, o que está correto?",
           alternatives: [
-            { id: "v", text: "Certo", correct: false },
-            { id: "f", text: "Errado", correct: true }
+            { id: "a", text: "Afastamento mínimo de 50 cm das paredes e corredores, no máximo 10 paletes vazios empilhados e carga a 15–20 cm do chão em terreno regular.", correct: true },
+            { id: "b", text: "Pode ultrapassar a capacidade do piso se o trajeto for curto.", correct: false },
+            { id: "c", text: "Paletes vazios podem ser empilhados sem limite, e a carga pode arrastar no chão.", correct: false }
           ],
-          explanation: "Materiais a granel sem contenção, como areia solta ou líquidos livres, nunca devem ser transportados na transpaleteira.",
-          review: "Areia solta"
+          explanation: "O piso tem limite estrutural. O afastamento é de pelo menos 50 cm. No máximo 10 paletes vazios. Em terreno regular, a carga vai a 15–20 cm do solo.",
+          review: "50 cm, 10 paletes, 15–20 cm"
         },
         {
-          id: "nr11-m4-ce4",
+          id: "nr11-m3-p4",
           type: "question",
-          tf: true,
-          question: "Bobinas e chapas soltas, sem embalagem individual, são classificadas como carga diversa.",
+          icon: "📋",
+          image: "assets/fotos/m7i2.png",
+          imageAlt: "Operadora confere o equipamento antes de usar",
+          question: "No checklist, a trava da bateria está não conforme. O que você faz?",
           alternatives: [
-            { id: "v", text: "Certo", correct: true },
-            { id: "f", text: "Errado", correct: false }
+            { id: "a", text: "Opera assim mesmo e avisa a chefia no fim do turno.", correct: false },
+            { id: "b", text: "Aperta a trava por conta própria e segue, porque o reparo simples é do operador.", correct: false },
+            { id: "c", text: "Não opera. Comunica a chefia e envia a máquina imediatamente para a manutenção.", correct: true }
           ],
-          explanation: "Cargas diversas são transportadas sem embalagem, de forma individual, como bobinas e chapas.",
-          review: "Carga diversa"
-        },
-        {
-          id: "nr11-m4-ce5",
-          type: "question",
-          tf: true,
-          question: "O material empilhado deve ficar a pelo menos 50 cm de distância das estruturas laterais do prédio.",
-          alternatives: [
-            { id: "v", text: "Certo", correct: true },
-            { id: "f", text: "Errado", correct: false }
-          ],
-          explanation: "O afastamento mínimo de 50 cm também vale para os corredores de circulação.",
-          review: "Afastamento de 50 cm"
+          explanation: "Item não conforme tira o equipamento de uso. A chefia é avisada e a máquina vai para a manutenção. O operador não repara.",
+          review: "Não conforme para a manutenção"
         }
       ]
     },
     {
-      id: 5,
-      title: "Manutenção e Segurança com Baterias",
-      objective: "Cuidar da conservação da transpaleteira e da bateria: checklist, troca, recarga e riscos químicos.",
+      id: 4,
+      title: "Substituição e Gestão de Baterias, Riscos e Prevenção de Acidentes",
+      objective: "Trocar a bateria em dupla, cumprir o descanso e a água desmineralizada, e prevenir tombamento, colisão, atropelamento e queda de material.",
       titleUnlock: {
-        title: "ENERGIA SOB CONTROLE",
-        body: "Você faz o checklist, troca a bateria na ordem certa e trata a solução ácida com cuidado.",
+        title: "ENERGIA E PREVENÇÃO",
+        body: "Você troca a bateria sem esmagar e sem curto, e trata o ácido e os riscos da operação com o procedimento certo.",
         icon: "🔋"
       },
       screens: [
         {
-          id: "nr11-m5-capa",
+          id: "nr11-m4-capa",
           type: "cover",
           icon: "🔋",
           image: "assets/fotos/capa-modulo5.png",
           imageAlt: "Transpaleteira elétrica laranja em um corredor de galpão, entre estantes de paletes",
-          title: "Módulo 5 — Manutenção e segurança com baterias",
-          subtitle: "Manutenção preventiva, troca de bateria, gestão da recarga e riscos químicos."
+          title: "Módulo 4 — Substituição e gestão de baterias, riscos e prevenção",
+          subtitle: "Troca em dupla, descanso de 1,5 h, água desmineralizada, riscos químicos e análise de acidentes."
         },
         {
-          id: "nr11-m5-conservacao",
-          type: "content",
-          fit: true,
-          eyebrow: "Conteúdo",
-          title: "Manutenção e Conservação da Transpaleteira",
-          titleAccent: "Conservação da Transpaleteira",
-          cards: [
-            { icon: "🔧", title: "Importância da Manutenção Preventiva", body: "Com o cuidado constante com o equipamento, é possível evitar falhas inesperadas e aumentar a durabilidade da transpaleteira." },
-            { icon: "📋", title: "Checklist Diário", body: "Elaboração de um roteiro de inspeção diário, verificando o estado dos pneus, freios, bateria, nível de carga e possíveis vazamentos de fluido." },
-            { icon: "⚠️", title: "Problemas Comuns", body: "Identificar e relatar defeitos no sistema elétrico, freios, garfos e outros componentes antes que causem acidentes." },
-            { icon: "🛑", title: "Ação em Caso de Falhas", body: "Ao identificar um problema técnico durante a operação, estacione imediatamente o equipamento em local seguro e relate o fato à chefia e à equipe de manutenção." }
-          ]
-        },
-        {
-          id: "nr11-m5-preventiva",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Manutenção Preventiva e o Checklist Diário",
-          playerId: "panda-5f1f4802-4285-4816-857c-56b7f6c070b4",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=5f1f4802-4285-4816-857c-56b7f6c070b4"
-        },
-        {
-          id: "nr11-m5-troca",
+          id: "nr11-m4-troca",
           type: "content",
           layout: "flow",
           fit: true,
           eyebrow: "Procedimento",
-          title: "Passo a Passo Troca de Bateria",
-          titleAccent: "Troca de Bateria",
+          title: "Troca de Bateria em Dupla",
+          titleAccent: "em Dupla",
           cards: [
-            { icon: "1", title: "Confirme o nível de carga", body: "Ligue a chave e verifique a carga." },
-            { icon: "2", title: "Desligue o equipamento", body: "Desligue na chave de ignição." },
-            { icon: "3", title: "Abra a tampa e solte a trava", body: "Com cuidado, solte a trava de segurança." },
-            { icon: "4", title: "Desconecte o cabo", body: "Segure firme pelo conector." },
-            { icon: "5", title: "Retire a bateria antiga", body: "Atenção ao peso e ao equilíbrio." },
-            { icon: "6", title: "Posicione a nova bateria", body: "No mesmo lugar da anterior." },
-            { icon: "7", title: "Verifique a polaridade e conecte", body: "Conecte a bateria e o cabo elétrico." },
-            { icon: "8", title: "Trave e feche a tampa", body: "Bateria carregada e trava acionada." },
-            { icon: "9", title: "Conecte no carregador", body: "Bateria descarregada vai para recarga." }
+            { icon: "1", title: "Vista as luvas", body: "As duas pessoas usam as luvas de segurança antes de tocar na bateria ou no conector." },
+            { icon: "2", title: "Desligue a chave", body: "A chave elétrica fica desligada. Ninguém troca bateria com o equipamento energizado." },
+            { icon: "3", title: "Abra a tampa", body: "Abra a cobertura da bateria e confirme que o conjunto está estável." },
+            { icon: "4", title: "Solte a trava", body: "Solte a trava de segurança só depois da chave desligada." },
+            { icon: "5", title: "Desconecte o cabo", body: "Segure pela alça do conector. Não puxe pelos fios." },
+            { icon: "6", title: "Posicione o carrinho", body: "O carrinho de troca entra alinhado, na altura da bateria, antes de puxar o conjunto." },
+            { icon: "7", title: "Retire sem as mãos na estrutura", body: "A bateria sai para o carrinho sem a mão entre o conjunto e o chassi. É assim que se evita o esmagamento." },
+            { icon: "8", title: "Instale a bateria nova", body: "A bateria carregada entra no mesmo alojamento, assentada por completo." },
+            { icon: "9", title: "Confira a polaridade", body: "A polaridade é verificada antes de conectar. Polo invertido provoca curto-circuito." },
+            { icon: "10", title: "Trave a bateria", body: "A trava volta a prender o conjunto. Bateria solta não entra em operação." },
+            { icon: "11", title: "Feche e confira 100%", body: "Feche a tampa, ligue e confirme 100% de carga no painel antes de sair com a máquina." }
           ],
-          note: "Procedimento correto é garantia de um trabalho seguro!"
+          note: { alert: true, label: "Duas pessoas", text: "A troca é obrigatoriamente feita por duas pessoas. Uma pessoa sozinha não retira nem instala a bateria." }
         },
         {
-          id: "nr11-m5-bateria",
+          id: "nr11-m4-video-box",
           type: "video",
           kicker: "Vídeo",
-          title: "Gestão da Carga e Ciclo de Vida da Bateria",
-          playerId: "panda-69ea0ec7-8361-4403-88c5-4c4b75096604",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=69ea0ec7-8361-4403-88c5-4c4b75096604"
+          title: "Gestão do Box, Tempo de Descanso, Nível de Água e Formulário de Controle",
+          playerId: "panda-d1597e97-f5a4-4c83-b7a4-725435dfccd2",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=d1597e97-f5a4-4c83-b7a4-725435dfccd2"
         },
         {
-          id: "nr11-m5-restricoes",
+          id: "nr11-m4-box",
           type: "content",
           fit: true,
-          eyebrow: "Segurança",
-          title: "Restrições no Uso da Bateria",
-          titleAccent: "no Uso da Bateria",
+          eyebrow: "Box de baterias",
+          title: "Descanso, Sinalização e Água",
+          titleAccent: "Descanso, Sinalização e Água",
+          body: "A bateria que saiu do carregador ainda não está pronta para a máquina.",
           cards: [
-            { icon: "🚭", title: "Proibido Fumar e Fontes de Ignição", body: "Não fume, não use chamas nem produza fagulhas próximo a uma bateria. Os riscos químicos são sérios." },
-            { icon: "💥", title: "Evite Impactos", body: "Nunca permita que a bateria sofra impactos, para evitar danos internos à sua estrutura." },
-            { icon: "🚫", title: "Não Apoie Objetos", body: "Não coloque objeto, ferramenta ou pano sobre a bateria, evitando curto-circuito." },
-            { icon: "✨", title: "Mantenha Limpa e Seca", body: "Mantenha o corpo da bateria sempre limpo e seco, para evitar corrosão e fuga de corrente à terra." },
-            { icon: "👁️", title: "Contato com Pele ou Olhos", body: "Se a solução ácida atingir olhos, pele ou roupas, lave na hora com água em abundância. Se os olhos forem atingidos, procure socorro médico sem demora." },
-            { icon: "🧪", title: "Derramamento Acidental", body: "Neutralize o ácido derramado com bicarbonato de sódio e água, até que pare de borbulhar." }
-          ]
-        },
-        {
-          id: "nr11-m5-desafio",
-          type: "quiz-intro",
-          icon: "🔧",
-          title: "Desafio Módulo 5 — Central de Manutenção",
-          body: "Você vai ler 5 situações sobre manutenção, troca de bateria e restrições de segurança. Toque no setor correto para classificar cada uma: <strong>Manutenção</strong>, <strong>Troca de Bateria</strong> ou <strong>Restrição</strong>.",
-          startLabel: "Iniciar triagem",
-          count: 5,
-          minCorrect: 4
-        },
-        {
-          id: "nr11-m5-triagem",
-          type: "sort",
-          ordered: true,
-          relaxed: true,
-          minCorrect: 4,
-          bins: [
-            { id: "manutencao", label: "Manutenção", icon: "🔧", tone: "manutencao" },
-            { id: "troca", label: "Troca de Bateria", icon: "🔋", tone: "troca" },
-            { id: "restricao", label: "Restrição", icon: "⚠️", tone: "restricao" }
+            { icon: "⏱️", title: "Descanso de 1,5 hora", body: "Depois da recarga, a bateria descansa 1,5 hora antes de voltar à operação." },
+            { icon: "🏷️", title: "Etiqueta do box", body: "Cada bateria é identificada como carregada, descarregada ou em descanso. Sem etiqueta, ela não circula." },
+            { icon: "💧", title: "Água só depois da recarga", body: "A água desmineralizada entra estritamente após a recarga. Não bata nas boias." },
+            { icon: "📋", title: "Controle de Bateria", body: "Cada movimentação, recarga e reposição de água é registrada no formulário Controle de Bateria." }
           ],
-          items: [
-            { icon: "🚭", text: "Nunca fume, use chamas ou produza fagulhas próximo a uma bateria.", bin: "restricao", hint: "Setor certo: Restrição." },
-            { icon: "📋", text: "Elaborar um roteiro de inspeção diário, verificando pneus, freios, bateria e vazamentos.", bin: "manutencao", hint: "Setor certo: Manutenção." },
-            { icon: "🔑", text: "Confirme o nível de carga e depois desligue o equipamento na chave de ignição.", bin: "troca", hint: "Setor certo: Troca de Bateria." },
-            { icon: "🚫", text: "Não coloque ferramentas ou panos sobre a bateria, para evitar curto-circuito.", bin: "restricao", hint: "Setor certo: Restrição." },
-            { icon: "🔌", text: "Ao terminar o processo, conecte a bateria descarregada no carregador.", bin: "troca", hint: "Setor certo: Troca de Bateria." }
-          ]
-        }
-      ]
-    },
-    {
-      id: 6,
-      title: "Gestão de Riscos, Emergências e EPIs",
-      objective: "Prevenir acidentes com EPI, reconhecer os principais riscos, agir em emergência e respeitar as proibições críticas.",
-      titleUnlock: {
-        title: "CADA CUIDADO CONTA",
-        body: "Você usa o EPI certo, age no alarme de incêndio e não dá carona nem improvisa conserto.",
-        icon: "🛡️"
-      },
-      screens: [
-        {
-          id: "nr11-m6-capa",
-          type: "cover",
-          icon: "🛡️",
-          image: "assets/fotos/capa-modulo6.png",
-          imageAlt: "Transpaleteira elétrica no corredor do galpão e EPIs sobre a bancada: capacete, colete, protetor auricular, óculos e botina",
-          title: "Módulo 6 — Gestão de riscos, emergências e EPIs",
-          subtitle: "EPI obrigatório, principais riscos, emergência e proibições críticas."
+          note: { label: "Ordem", text: "Primeiro a recarga termina. Depois o descanso de 1,5 hora. A água desmineralizada não antecipa a carga." }
         },
         {
-          id: "nr11-m6-epis",
-          type: "content",
-          layout: "side",
-          fit: true,
-          eyebrow: "Segurança",
-          title: "EPIs: Proteção à Sua Saúde Física",
-          titleAccent: "Proteção à Sua Saúde Física",
-          image: "assets/fotos/epis.jpeg",
-          imageAlt: "Botina, capacete, luvas, óculos e protetor auricular",
-          body: "Na operação logística, a segurança começa antes mesmo de ligar a máquina. Por lei, a empresa fornece, orienta, treina e exige o uso de todos os EPIs necessários para a função — por isso, o uso correto é seu dever obrigatório.",
-          cards: [
-            { icon: "👢", title: "Botina de Segurança", body: "Protege seus pés contra impactos de cargas durante a movimentação." },
-            { icon: "🧤", title: "Luvas de Proteção", body: "Fundamentais para o manuseio firme do timão e dos cabos." },
-            { icon: "🎧", title: "Protetor Auricular", body: "Obrigatório para atuar com segurança em áreas com ruído elevado." }
-          ]
-        },
-        {
-          id: "nr11-m6-riscos",
+          id: "nr11-m4-video-riscos",
           type: "video",
           kicker: "Vídeo",
-          title: "Riscos Provenientes da Operação",
-          playerId: "panda-7cb1ff16-18cb-4c56-9f15-3734b0ff1251",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=7cb1ff16-18cb-4c56-9f15-3734b0ff1251"
+          title: "Riscos Químicos, Primeiros Socorros e Prevenção de Acidentes Operacionais",
+          playerId: "panda-435ecddd-05aa-4a35-b898-76cb6a9efc22",
+          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=435ecddd-05aa-4a35-b898-76cb6a9efc22"
         },
         {
-          id: "nr11-m6-emergencia",
+          id: "nr11-m4-emergencia",
           type: "content",
-          layout: "emerge",
           fit: true,
           eyebrow: "Emergência",
-          title: "Como Agir em Emergências",
-          titleAccent: "Emergências",
-          body: "Saiba como agir em casos de emergências:",
+          title: "Manutenção da Bateria, Neutralização e Emergências",
+          titleAccent: "Neutralização e Emergências",
+          body: "Ácido, curto-circuito e princípio de incêndio pedem conduta imediata e correta.",
           cards: [
-            { icon: "🚨", title: "Alarme de Incêndio", body: "Ao ouvir o alarme, estacione o veículo em local seguro, deixando passagem livre." },
-            { icon: "🧯", title: "Manejo de Extintores", body: "Conheça o manejo de extintores. Esse conhecimento pode salvar vidas." }
+            { icon: "🧪", title: "Neutralize o ácido", body: "No derramamento acidental, neutralize na hora com bicarbonato de sódio e água até parar de borbulhar." },
+            { icon: "✨", title: "Limpa e seca", body: "Mantenha a bateria limpa e seca. Assim evita fuga de corrente para a terra e corrosão." },
+            { icon: "🚫", title: "Nada sobre a bateria", body: "Nunca coloque ferramenta, pano ou objeto sobre a bateria. Isso provoca curto-circuito e pode causar explosão." },
+            { icon: "🔋", title: "Não descarregue até o fim", body: "Evite descarregar a bateria até o final. A descarga total reduz drasticamente a vida útil." },
+            { icon: "🚨", title: "Alarme de incêndio", body: "Ao soar o alarme, estacione a paleteira em local seguro e libere por completo a via de evacuação." },
+            { icon: "🧯", title: "Princípio de incêndio", body: "Peça ajuda e acione a Brigada de Emergência. Com treinamento de brigadista, combata com pó químico ou CO₂ — adequados a equipamento elétrico." }
           ],
-          chainLabel: "Em caso de princípio de incêndio no veículo",
-          items: [
-            { icon: "🆘", title: "Peça ajuda" },
-            { icon: "📣", title: "Comunique" },
-            { icon: "🔥", title: "Combata as chamas" }
-          ],
-          note: "Use o extintor adequado: Pó químico ou CO₂."
+          note: { alert: true, label: "Extintor certo", text: "Em equipamento elétrico, use pó químico ou dióxido de carbono (CO₂). Não use água." }
         },
         {
-          id: "nr11-m6-desafio",
+          id: "nr11-m4-desafio",
           type: "quiz-intro",
-          icon: "🔢",
-          title: "Desafio Final — Ordem Certa",
-          body: "São 2 rodadas rápidas. Toque nos itens na ordem correta: primeiro o protocolo de emergência, depois a sequência de uso dos EPIs. Simples e direto — vamos lá!",
-          startLabel: "Iniciar desafio",
-          count: 2,
-          minCorrect: 2
-        },
-        {
-          id: "nr11-m6-ordem",
-          type: "order",
-          minCorrect: 1,
-          rounds: [
-            {
-              title: "Protocolo de Emergência",
-              body: "Toque na ordem correta, em caso de princípio de incêndio:",
-              items: [
-                { key: "ajuda", text: "Peça ajuda", icon: "🆘", rank: 1 },
-                { key: "comunique", text: "Comunique", icon: "📣", rank: 2 },
-                { key: "chamas", text: "Combata as chamas", icon: "🧯", rank: 3 }
-              ]
-            },
-            {
-              title: "Uso dos EPIs",
-              body: "Toque na ordem correta, dos pés à cabeça:",
-              items: [
-                { key: "botina", text: "Botina de Segurança", icon: "👢", rank: 1 },
-                { key: "luvas", text: "Luvas de Proteção", icon: "🧤", rank: 2 },
-                { key: "auricular", text: "Protetor Auricular", icon: "🎧", rank: 3 }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      id: 7,
-      title: "NR-12 — Segurança no Trabalho em Máquinas e Equipamentos",
-      objective: "Entender a NR-12, reconhecer os riscos mecânicos e elétricos e seguir as condutas seguras na operação.",
-      titleUnlock: {
-        title: "NR-12 EM DIA",
-        body: "Você conhece o objetivo da norma, os riscos mecânicos e elétricos e as condutas seguras.",
-        icon: "📘"
-      },
-      screens: [
-        {
-          id: "nr11-m7-capa",
-          type: "cover",
-          icon: "📘",
-          image: "assets/fotos/capa.png",
-          imageAlt: "Operadora com capacete e colete ao lado de uma transpaleteira elétrica, em um corredor de galpão com estantes de paletes",
-          title: "Módulo 7 — Segurança no trabalho em máquinas e equipamentos",
-          subtitle: "O que é a NR-12, riscos mecânicos e elétricos, condutas proibidas e boas práticas."
-        },
-        {
-          id: "nr11-m7-objetivo",
-          type: "video",
-          kicker: "Vídeo",
-          title: "O que é a NR 12 e o seu Objetivo",
-          playerId: "panda-ddb9a2c6-5ba0-490d-b4b7-4bfee7339648",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=ddb9a2c6-5ba0-490d-b4b7-4bfee7339648"
-        },
-        {
-          id: "nr11-m7-deveres",
-          type: "content",
-          fit: true,
-          eyebrow: "NR-12",
-          title: "Quatro Deveres no Início do Turno",
-          titleAccent: "Início do Turno",
-          body: "A segurança operacional depende das suas atitudes. No início de cada turno, cumpra estes quatro deveres.",
-          cards: [
-            { icon: "🔍", title: "Inspecionar", body: "Verifique as condições completas do equipamento antes do uso, sem nenhuma exceção." },
-            { icon: "📣", title: "Comunicar", body: "Ao menor sinal de anomalia, relate imediatamente ao supervisor ou à manutenção." },
-            { icon: "⚖️", title: "Respeitar a carga", body: "Nunca exceda a capacidade máxima indicada na placa de identificação da máquina." },
-            { icon: "📋", title: "Seguir procedimentos", body: "Cumpra rigorosamente as instruções de segurança e as regras da empresa." }
-          ],
-          note: "Trabalhar com responsabilidade protege você e seus colegas de trabalho!"
-        },
-        {
-          id: "nr11-m7-riscos",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Identificando os Riscos Mecânicos e Elétricos",
-          playerId: "panda-fb2549f7-7d12-4046-a7ae-b72b70405608",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=fb2549f7-7d12-4046-a7ae-b72b70405608"
-        },
-        {
-          id: "nr11-m7-protecao",
-          type: "content",
-          fit: true,
-          eyebrow: "Conteúdo",
-          title: "Sistemas de Proteção e Regras de Proteção Física",
-          titleAccent: "Regras de Proteção Física",
-          body: "Os equipamentos de movimentação possuem proteções especiais para resguardar a vida do operador e a integridade de terceiros.",
-          cards: [
-            { icon: "🛡️", title: "Grade de proteção superior", body: "Resguarda a cabeça do operador em caso de queda de caixas ou objetos de alturas elevadas." },
-            { icon: "🛑", title: "Botão de desligamento de emergência", body: "Trava imediatamente o fornecimento de energia e cessa as funções de tração e hidráulica da máquina." },
-            { icon: "🚨", title: "Buzina, giroflex e alarme de ré", body: "Emitem sinais visuais e sonoros indispensáveis para avisar pedestres em áreas ruidosas de estoque." },
-            { icon: "🔒", title: "Cinto de segurança sem exceções", body: "O uso do cinto é obrigatório em todos os deslocamentos. Em um tombamento, ele evita que o operador seja arremessado e esmagado pelo chassi." },
-            { icon: "🧍", title: "Corpo sempre dentro do perímetro", body: "Mantenha braços, pernas, mãos e cabeça dentro da cabine. Nunca apoie o corpo na coluna de elevação nem coloque membros para fora em movimento." }
-          ],
-          note: {
-            alert: true,
-            label: "Dispositivos obrigatórios",
-            text: "Nunca neutralize, altere ou opere com qualquer dispositivo de segurança desligado ou danificado."
-          }
-        },
-        {
-          id: "nr11-m7-condutas",
-          type: "video",
-          kicker: "Vídeo",
-          title: "Condutas Proibidas e Boas Práticas",
-          playerId: "panda-72e77a2b-4b6b-48a8-ad09-c9be79566ce9",
-          embed: "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=72e77a2b-4b6b-48a8-ad09-c9be79566ce9"
-        },
-        {
-          id: "nr11-m7-desafio",
-          type: "quiz-intro",
-          icon: "🛡️",
-          title: "Missão NR 12 — Módulo 7",
-          body: "São 4 perguntas simples sobre a NR 12. Toque na resposta certa e valide o módulo!",
-          startLabel: "Iniciar desafio",
+          title: "Bateria e prevenção",
+          body: "Quatro perguntas sobre troca, box, ácido e acidentes. Acerte no mínimo <strong>3</strong> de <strong>4</strong> para concluir o treinamento.",
           count: 4,
-          minCorrect: 3
+          minCorrect: 3,
+          icon: "🔋"
         },
         {
-          id: "nr11-m7-p1",
+          id: "nr11-m4-p1",
           type: "question",
-          icon: "📋",
-          image: "assets/fotos/m7i1.png",
-          imagePosition: "center 12%",
-          imageAlt: "Operadora aponta um checklist da NR-12, com relógio, calendário e transpaleteira no galpão",
-          question: "Para que serve a NR 12?",
-          alternatives: [
-            { id: "a", text: "Garantir segurança no trabalho com máquinas e equipamentos, como empilhadeira e transpaleteira.", correct: true },
-            { id: "b", text: "Dispensar o uso do cinto de segurança.", correct: false },
-            { id: "c", text: "Organizar só o horário de almoço da equipe.", correct: false }
-          ],
-          explanation: "A NR-12 existe para garantir a segurança no trabalho com máquinas e equipamentos, como a empilhadeira e a transpaleteira.",
-          review: "Objetivo da NR-12"
-        },
-        {
-          id: "nr11-m7-p2",
-          type: "question",
-          icon: "🔍",
-          image: "assets/fotos/m7i2.png",
-          imagePosition: "center 12%",
-          imageAlt: "Operadora faz o checklist da transpaleteira antes do uso, com uma lupa de inspeção ao lado",
-          question: "Qual é o primeiro dever de cada turno?",
-          alternatives: [
-            { id: "a", text: "Ligar a máquina e sair rápido, sem checklist.", correct: false },
-            { id: "b", text: "Inspecionar o equipamento completo antes de usar.", correct: true },
-            { id: "c", text: "Deixar o colega inspecionar no seu lugar.", correct: false }
-          ],
-          explanation: "O primeiro dever de cada turno é inspecionar o equipamento completo antes de usar, sem exceção.",
-          review: "Primeiro dever do turno"
-        },
-        {
-          id: "nr11-m7-p3",
-          type: "question",
-          icon: "⚡",
+          icon: "🔋",
           image: "assets/fotos/m7i3.png",
-          imagePosition: "center 12%",
-          imageAlt: "Transpaleteira na recarga, com alertas de chama, gás e curto-circuito na bateria",
-          question: "Qual risco existe na recarga da bateria?",
+          imageAlt: "Área de bateria da transpaleteira, com alerta de curto e de chama",
+          question: "Como a troca de bateria deve ser feita?",
           alternatives: [
-            { id: "a", text: "Apenas o barulho da recarga.", correct: false },
-            { id: "b", text: "Curto-circuito, aquecimento excessivo e gases tóxicos.", correct: true },
-            { id: "c", text: "Nenhum: equipamento elétrico não oferece risco.", correct: false }
+            { id: "a", text: "Por uma pessoa, com a chave ligada, para ganhar tempo.", correct: false },
+            { id: "b", text: "Por duas pessoas: luvas, chave desligada, retirada sem as mãos na estrutura, polaridade conferida, trava fechada e 100% no painel.", correct: true },
+            { id: "c", text: "Puxando o cabo pelos fios e deixando a trava aberta se a carga estiver em 100%.", correct: false }
           ],
-          explanation: "Na recarga da bateria há risco de curto-circuito, aquecimento excessivo e gases tóxicos.",
-          review: "Riscos na recarga"
+          explanation: "A troca é sempre em dupla. Chave desligada, mãos fora da estrutura, polaridade certa, trava e tampa fechadas, com 100% confirmados no painel.",
+          review: "Troca em dupla"
         },
         {
-          id: "nr11-m7-p4",
+          id: "nr11-m4-p2",
           type: "question",
-          icon: "🚨",
-          image: "assets/fotos/m7i4.png",
-          imagePosition: "center 12%",
-          imageAlt: "Transpaleteira com a carenagem rachada e os itens de proteção: alarme, cinto, luz e botão de emergência",
-          question: "Pode operar com proteção danificada?",
+          icon: "⏱️",
+          image: "assets/fotos/m4i2.png",
+          imagePosition: "center top",
+          imageAlt: "Box de baterias com as áreas carregada, descarregada e em descanso",
+          question: "Depois que a recarga termina, qual é a conduta no box?",
           alternatives: [
-            { id: "a", text: "Sim, se for só um trecho curto.", correct: false },
-            { id: "b", text: "Não. Cinto, buzina, alarme, luzes, proteção superior e botão de emergência devem estar funcionando.", correct: true },
-            { id: "c", text: "Só o cinto pode ficar solto.", correct: false }
+            { id: "a", text: "A bateria volta direto para a máquina e a água desmineralizada entra antes da carga, batendo na boia para nivelar.", correct: false },
+            { id: "b", text: "Descanso obrigatório de 1,5 hora, etiqueta de carregada, descarregada ou descanso, água desmineralizada só após a recarga e registro no Controle de Bateria.", correct: true },
+            { id: "c", text: "O descanso é de 15 minutos e o formulário é opcional.", correct: false }
           ],
-          explanation: "Não se opera com proteção danificada. Cinto, buzina, alarme, luzes, proteção superior e botão de emergência precisam estar funcionando.",
-          review: "Proteção danificada"
+          explanation: "A bateria descansa 1,5 hora, identificada no box. A água desmineralizada só entra depois da recarga, sem bater nas boias. Tudo vai para o formulário Controle de Bateria.",
+          review: "Descanso de 1,5 h"
         },
         {
-          id: "nr11-m6-final",
+          id: "nr11-m4-p3",
+          type: "question",
+          icon: "🧪",
+          image: "assets/fotos/m4i3.png",
+          imageAlt: "Operador lava o braço com água abundante após contato com ácido, com colega ao lado",
+          question: "O ácido da bateria atingiu o braço de um colega na área de recarga. Qual é a primeira conduta?",
+          alternatives: [
+            { id: "a", text: "Secar com pano e voltar a operar, porque a área de recarga admite faísca.", correct: false },
+            { id: "b", text: "Lavar com água em abundância e encaminhar para atendimento médico. Chama e faísca continuam proibidas na área.", correct: true },
+            { id: "c", text: "Esperar a ardência passar antes de molhar, para não espalhar o ácido.", correct: false }
+          ],
+          explanation: "Lave na hora com muita água e procure atendimento médico. Na área de recarga não se fuma, não se faz faísca e não se aproxima chama.",
+          review: "Água e atendimento médico"
+        },
+        {
+          id: "nr11-m4-p4",
+          type: "question",
+          icon: "⚠️",
+          image: "assets/fotos/capa-modulo6.png",
+          imageAlt: "Operação de transpaleteira no corredor, cenário dos riscos de colisão e queda de carga",
+          question: "Quais acidentes esta operação precisa prevenir, e o que sustenta essa prevenção?",
+          alternatives: [
+            { id: "a", text: "Apenas o atraso de entrega, desde que a velocidade passe de 6 km/h.", correct: false },
+            { id: "b", text: "Tombamento, colisão, atropelamento e queda de material. A prevenção é dever de cada operador e da equipe.", correct: true },
+            { id: "c", text: "Só o tombamento, e apenas quando a chefia estiver no corredor.", correct: false }
+          ],
+          explanation: "Os riscos centrais são tombamento, colisão, atropelamento e queda de material. Parar a manobra insegura é compromisso individual e coletivo.",
+          review: "Quatro riscos da operação"
+        },
+        {
+          id: "nr11-m4-final",
           type: "finale",
           kicker: "Conclusão",
           image: "assets/fotos/capafinal.png",
@@ -948,7 +720,7 @@ window.QUESTION_SCREEN_SESSION = {
           title: "Parabéns",
           body: "Você concluiu o treinamento de operação da transpaleteira.",
           quote: "Cada cuidado conta.",
-          chips: ["NR-11", "NR-12", "Transpaleteira", "Capacitação"]
+          chips: ["NR-11", "EPI", "Transpaleteira", "Bateria"]
         }
       ]
     }
