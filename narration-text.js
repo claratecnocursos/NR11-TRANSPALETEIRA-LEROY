@@ -185,11 +185,11 @@
     if (screen.transcript) return clean(stripHtml(screen.transcript));
     var parts = [];
 
-    // vídeo: só anuncia o que vem. O conteúdo quem narra é o próprio vídeo.
+    // vídeo: só anuncia o título. O conteúdo quem narra é o próprio vídeo.
     if (screen.type === 'video') {
       parts.push((clean(screen.kicker) || 'Vídeo') + '.');
       if (screen.title) parts.push(clean(screen.title) + '.');
-      parts.push('Assista ao vídeo para avançar.');
+      parts.push('Assista ao vídeo completo para avançar.');
       return joinParts(parts);
     }
 

@@ -55,6 +55,18 @@ async function login() {
   return data.token;
 }
 
+/* Mesma voz em todas as páginas: estabilidade alta + seed fixo
+   reduz variação de timbre entre um áudio e outro. */
+const VOICE_LOCK = {
+  seed: 11011,
+  voice_settings: {
+    stability: 0.9,
+    similarity_boost: 0.8,
+    style: 0,
+    use_speaker_boost: true
+  }
+};
+
 async function synthesize(text, token) {
   const res = await fetch(API_BASE + '/api/tts', {
     method: 'POST',
@@ -62,7 +74,7 @@ async function synthesize(text, token) {
       Authorization: 'Bearer ' + token,
       'Content-Type': JSON_UTF8
     },
-    body: JSON.stringify({ text })
+    body: JSON.stringify(Object.assign({ text: text }, VOICE_LOCK))
   });
   if (!res.ok) {
     throw new Error('TTS falhou (HTTP ' + res.status + ')');
@@ -117,12 +129,8 @@ async function main() {
   }
 
   const wanted = ids.map(function (id) {
-    if (id === 'home') return 'home-nr01';
-    if (id === 'menu-1') return 'menu-nr01-1';
-    if (id === 'menu-2') return 'menu-nr01-2';
-    if (id === 'menu-3') return 'menu-nr01-3';
-    if (id === 'menu-4') return 'menu-nr01-4';
-    if (id === 'menu-done') return 'menu-nr01-done';
+    if (id === 'home') return 'home-nr11';
+    if (id === 'menu-done') return 'menu-nr11-done';
     return id;
   });
 

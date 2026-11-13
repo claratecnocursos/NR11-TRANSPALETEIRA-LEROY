@@ -19,7 +19,7 @@
 
   var CONFIG = {
     audioDir: 'audios/',
-    audioVer: 'nr11-mod4',
+    audioVer: 'nr11-homemenu',
 
     // espera curta: vários eventos juntos viram uma chamada só
     debounceMs: 300,

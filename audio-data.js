@@ -135,7 +135,7 @@ function loadSession() {
 function catalogEntries(session) {
   const entries = [
     { id: T.HOME_KEY, title: 'Abertura' },
-    { id: 'menu-nr12-done', title: 'Menu, concluído' }
+    { id: 'menu-nr11-done', title: 'Menu, concluído' }
   ];
   [1, 2, 3, 4].forEach(function (n) {
     var variants = n === 1 ? ['start', 'review', 'done-first'] : ['start', 'review', 'done'];
